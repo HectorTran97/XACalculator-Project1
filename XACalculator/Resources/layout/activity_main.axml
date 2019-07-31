@@ -18,11 +18,13 @@
             android:layout_height="match_parent"
             android:padding="10dp"
             android:textSize="50sp"
-            android:text="123"
-            android:layout_gravity="right"/>
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp" />
 
     </HorizontalScrollView>
-    
+
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -34,62 +36,82 @@
 
         <Button
             style="@style/button_calculator"
+            android:background="@color/material_grey_300"
             app:layout_columnSpan="3"
-            android:text="C" 
-            android:width="5dp"
-        android:height="5dp"/>
+            android:text="C" />
+
         <Button
             style="@style/button_calculator"
-            app:layout_columnSpan="1"
-            android:background="@drawable/backspace" />
+            android:background="@color/material_grey_300"
+            android:text="÷" />
+
         <Button
             style="@style/button_calculator"
             android:text="7" />
+
         <Button
             style="@style/button_calculator"
             android:text="8" />
+
         <Button
             style="@style/button_calculator"
             android:text="9" />
+
         <Button
             style="@style/button_calculator"
-            android:text="÷" />
+            android:background="@color/material_grey_300"
+            android:text="×" />
+
         <Button
             style="@style/button_calculator"
             android:text="4" />
+
         <Button
             style="@style/button_calculator"
             android:text="5" />
+
         <Button
             style="@style/button_calculator"
             android:text="6" />
+
         <Button
             style="@style/button_calculator"
-            android:text="×" />
+            android:background="@color/material_grey_300"
+            android:text="-" />
+
         <Button
             style="@style/button_calculator"
             android:text="1" />
+
         <Button
             style="@style/button_calculator"
             android:text="2" />
+
         <Button
             style="@style/button_calculator"
             android:text="3" />
+
         <Button
             style="@style/button_calculator"
-            android:text="-" />
+            android:background="@color/material_grey_300"
+            android:text="+" />
+
         <Button
             style="@style/button_calculator"
             android:text="." />
+
         <Button
             style="@style/button_calculator"
             android:text="0" />
+
         <Button
             style="@style/button_calculator"
+            android:text="" />
+
+        <Button
+            style="@style/button_calculator"
+            android:background="@color/colorBackground"
             android:text="=" />
-        <Button
-            style="@style/button_calculator"
-            android:text="+" />
-        
+
     </android.support.v7.widget.GridLayout>
 </LinearLayout>
