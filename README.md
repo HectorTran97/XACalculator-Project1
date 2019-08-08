@@ -1,4 +1,5 @@
-SIT313-XACalculator-Project1 : "XACalculator"
+XACalculator-Project1
+
 Project about calculator app Huy (Hector) : https://github.com/HectorTran97/XACalculator-Project1
 
 Team Members Details:
