@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <style name="button_operation">
+  <style name="button_advanced_calculator">
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_height">0dp</item>
     <item name="layout_rowWeight">1</item>
     <item name="layout_columnWeight">1</item>
     <item name="android:textSize">20sp</item>
-    <item name="android:background">#ecf0f1</item>
+    <item name="android:background">@color/colorBackgroundAdvanced</item>
+    <item name="android:textColor">@color/colorTextAdvanced</item>
     <item name="android:onClick">ButtonClick</item>
     <item name="android:textFontWeight">100</item>
     <item name="android:textStyle">normal</item>

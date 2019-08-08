@@ -6,7 +6,8 @@
     <item name="layout_rowWeight">1</item>
     <item name="layout_columnWeight">1</item>
     <item name="android:textSize">20sp</item>
-    <item name="android:background">#ecf0f1</item>
+    <item name="android:background">@color/colorBackgroundBasic</item>
+    <item name="android:textColor">@color/colorTextBasic</item>
     <item name="android:onClick">ButtonClick</item>
     <item name="android:textFontWeight">100</item>
     <item name="android:textStyle">normal</item>

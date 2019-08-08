@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#16a085"
+    android:background="@color/colorBackgroundBasic"
     android:orientation="vertical">
 
     <HorizontalScrollView
@@ -14,35 +14,59 @@
 
         <TextView
             android:id="@+id/calculator_text_view"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp"
+            android:padding="20dp"
             android:textSize="50sp"
             android:text="0"
             android:textColor="@android:color/white"
-            android:layout_gravity="right"
-            android:layout_marginTop="100dp" />
-
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+        
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/operator_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"/>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"/>
 
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="#ecf0f1"
         app:orientation="horizontal"
         app:rowCount="5"
         app:columnCount="4">
 
         <Button
             style="@style/button_calculator"
-            android:background="@color/material_grey_300"
-            app:layout_columnSpan="3"
             android:text="C" />
+
+        <Button            
+            android:id="@+id/scientificButton"
+            style="@style/button_calculator"
+            android:text="SCI" />
 
         <Button
             style="@style/button_calculator"
-            android:background="@color/material_grey_300"
+            android:text="%" />
+
+        <Button
+            style="@style/button_calculator"
+            android:textColor="@color/colorOperatorBasic"
             android:text="÷" />
 
         <Button
@@ -59,7 +83,7 @@
 
         <Button
             style="@style/button_calculator"
-            android:background="@color/material_grey_300"
+            android:textColor="@color/colorOperatorBasic"
             android:text="×" />
 
         <Button
@@ -76,7 +100,7 @@
 
         <Button
             style="@style/button_calculator"
-            android:background="@color/material_grey_300"
+            android:textColor="@color/colorOperatorBasic"
             android:text="-" />
 
         <Button
@@ -93,7 +117,7 @@
 
         <Button
             style="@style/button_calculator"
-            android:background="@color/material_grey_300"
+            android:textColor="@color/colorOperatorBasic"
             android:text="+" />
 
         <Button
@@ -110,7 +134,8 @@
 
         <Button
             style="@style/button_calculator"
-            android:background="@color/colorBackground"
+            android:background="@color/colorOperatorBasic"
+            android:textColor="@color/colorEqualButtonBasic"
             android:text="=" />
 
     </android.support.v7.widget.GridLayout>
